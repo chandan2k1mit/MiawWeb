@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SnapStock - Buy Stunning Photos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x600/?photography,nature');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .card-content p {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>SnapStock</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Browse</a>
+      <a href="#">Pricing</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Buy Beautiful, High-Quality Photos</h1>
+  </div>
+
+  <section class="section">
+    <h2>Featured Categories</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?landscape" alt="Landscape">
+        <div class="card-content">
+          <h3>Landscapes</h3>
+          <p>Stunning natural vistas and scenery</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?people" alt="People">
+        <div class="card-content">
+          <h3>People</h3>
+          <p>Authentic portraits and lifestyle shots</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?technology" alt="Technology">
+        <div class="card-content">
+          <h3>Technology</h3>
+          <p>Modern gadgets and digital scenes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Popular Photos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?mountains" alt="Photo 1">
+        <div class="card-content">
+          <h3>Mountain Escape</h3>
+          <p>$10.00</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?city" alt="Photo 2">
+        <div class="card-content">
+          <h3>City Lights</h3>
+          <p>$8.00</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?wildlife" alt="Photo 3">
+        <div class="card-content">
+          <h3>Wildlife Wonder</h3>
+          <p>$12.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 SnapStock. All rights reserved.
+  </footer>
+</body>
+</html>
